@@ -11,8 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } 
     elseif ($password !== $confirmpassword) {
         echo "<h2 class='text-red-500 font-bold text-center'>Error: Passwords do not match.</h2>";
-    } 
-    // If all conditions are met, display success message
+    }
     else {
         echo "<h2 class='text-green-500 font-bold text-center'>Account Created</h2>";
         echo "<p><strong>Name:</strong> $name</p>";
